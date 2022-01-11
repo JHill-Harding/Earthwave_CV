@@ -1,6 +1,6 @@
 #GitHub - https://github.com/JHill-Harding/Earthwave_CV
 import os,time
-class Applicant:
+class Applicant:                            # Show some knowledge of Object Orientated Programming
     role = "Junior Software Engineer"
     def __init__(self, name, age):
         self.name = name
@@ -22,7 +22,7 @@ print("GitHub - " + Josh.reassure()['GitHub'])
 print("Data Analysis - " + Josh.reassure()['Data Analysis'])
 print("Unity Game Engine - " + Josh.reassure()['Unity Game Engine'] + '\n')
 
-d={}
+d={}    # Big wall of text, want to print all so use dictionary and loop to save space/lines.
 d[0] = "I would love to work for Earthwave as I belive the work they are doing can be key to helping"
 d[1] = "inform the general population about climate change and the warming of our world."
 d[2] = "I would also like to start to develop my software writing skills further, which I belive Earthwave can help me do."
@@ -33,7 +33,7 @@ d[6] = "NI LabVIEW or Visual Basic (Excel) which will have issues if multiple in
 for i in range(6):
     print(d[i])
 input("Press Enter to continue...")
-
+# Bit of fun animation
 globe1 = (r"""
 	      @@@@@@        
 	    @@... /.@@      
@@ -88,7 +88,7 @@ globe4 = (r"""
            """)
 os.system('cls')
 globes = [globe1,globe2,globe3,globe4]
-def animator(globes, delay = 0.1, repeat = 10):
+def animation(globes, delay = 0.1, repeat = 10):
     frames = []
     for image in globes:
         frames.append(image)
@@ -97,4 +97,4 @@ def animator(globes, delay = 0.1, repeat = 10):
             print("".join(frame))
             time.sleep(delay)
             os.system('cls')
-animator(globes,delay=0.2,repeat=10)
+animation(globes,delay=0.2,repeat=10)
